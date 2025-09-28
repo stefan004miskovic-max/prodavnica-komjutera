@@ -1,19 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr">
 <head>
-    <title>PC Shop - Početna</title>
-    <link rel="icon" type="image/png" href="slike/favicon.png">
+    <meta charset="UTF-8">
+    <title>Prodavnica računara</title>
+    <link rel="icon" type="image/x-icon" href="resursi/favicon.ico">
 </head>
 <body>
-    <h1>Dobrodošli u PC Shop</h1>
-    <img src="slike/logo.png" alt="PC Shop Logo" width="200">
-    <nav>
-        <a href="index.html">Početna</a> |
-        <a href="proizvodi.html">Proizvodi</a> |
-        <a href="galerija.html">Galerija</a> |
-        <a href="kontakt.html">Kontakt</a> |
-        <a href="o-nama.html">O nama</a>
-    </nav>
-    <p>Vaša online prodavnica računara i opreme.</p>
+    <header>
+        <img src="slike/logo.png" alt="Logo prodavnice" width="120">
+        <h1>Prodavnica računara</h1>
+        <nav>
+            <a href="#pocetna">Početna</a> |
+            <a href="#onama">O nama</a> |
+            <a href="#proizvodi">Proizvodi</a> |
+            <a href="#galerija">Galerija</a> |
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Pocetna -->
+    <section id="pocetna">
+        <h2>Dobrodošli!</h2>
+        <p>Naša prodavnica nudi najnoviju računarsku opremu, laptopove, stolne računare i periferije.</p>
+        <ul>
+            <li>Kvalitetna oprema</li>
+            <li>Najbolje cene</li>
+            <li>Brza isporuka</li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- O nama -->
+    <section id="onama">
+        <h2>O nama</h2>
+        <p>Naša firma posluje više od 10 godina i specijalizovana je za prodaju i servis računara.</p>
+        
+        <h3>Radno vreme</h3>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Dan</th>
+                <th>Vreme</th>
+            </tr>
+            <tr>
+                <td>Ponedeljak - Petak</td>
+                <td>09:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Subota</td>
+                <td>09:00 - 15:00</td>
+            </tr>
+            <tr>
+                <td>Nedelja</td>
+                <td>Zatvoreno</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+
+    <!-- Proizvodi -->
+    <section id="proizvodi">
+        <h2>Naša ponuda</h2>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Proizvod</th>
+                <th>Opis</th>
+                <th>Cena</th>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>Intel i5, 8GB RAM, SSD 512GB</td>
+                <td>750 €</td>
+            </tr>
+            <tr>
+                <td>Desktop računar</td>
+                <td>Ryzen 5, 16GB RAM, RTX 3060</td>
+                <td>1200 €</td>
+            </tr>
+            <tr>
+                <td>Monitor</td>
+                <td>24" Full HD</td>
+                <td>180 €</td>
+            </tr>
+        </table>
+
+        <h3>Top 5 laptopova</h3>
+        <ol>
+            <li>Laptop X1</li>
+            <li>Laptop ProBook</li>
+            <li>Laptop Elite</li>
+            <li>Laptop Gaming</li>
+            <li>Laptop Business</li>
+        </ol>
+
+        <h3>Dodatna oprema</h3>
+        <ul>
+            <li>Miševi</li>
+            <li>Tastature</li>
+            <li>Slušalice</li>
+            <li>Torbe za laptop</li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- Galerija -->
+    <section id="galerija">
+        <h2>Galerija proizvoda</h2>
+        <img src="slike/laptop1.jpg" alt="Laptop" width="200">
+        <img src="slike/pc1.jpg" alt="Desktop računar" width="200">
+        <img src="slike/monitor1.jpg" alt="Monitor" width="200">
+    </section>
+    <hr>
+
+    <!-- Kontakt -->
+    <section id="kontakt">
+        <h2>Kontaktirajte nas</h2>
+        <form>
+            <label for="ime">Ime i prezime:</label><br>
+            <input type="text" id="ime" name="ime"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="telefon">Telefon:</label><br>
+            <input type="tel" id="telefon" name="telefon"><br><br>
+
+            <p>Pol:</p>
+            <input type="radio" id="musko" name="pol" value="Muško">
+            <label for="musko">Muško</label>
+            <input type="radio" id="zensko" name="pol" value="Žensko">
+            <label for="zensko">Žensko</label><br><br>
+
+            <p>Interesovanje:</p>
+            <input type="checkbox" id="laptop" name="interesovanje" value="Laptop">
+            <label for="laptop">Laptop</label>
+            <input type="checkbox" id="desktop" name="interesovanje" value="Desktop">
+            <label for="desktop">Desktop</label>
+            <input type="checkbox" id="oprema" name="interesovanje" value="Oprema">
+            <label for="oprema">Oprema</label><br><br>
+
+            <label for="poruka">Poruka:</label><br>
+            <textarea id="poruka" name="poruka" rows="5" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Pošalji">
+        </form>
+
+        <h3>Naša lokacija</h3>
+        <img src="slike/mapa.jpg" alt="Mapa prodavnice" width="300">
+    </section>
 </body>
 </html>
